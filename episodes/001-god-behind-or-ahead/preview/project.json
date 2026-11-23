@@ -1,0 +1,1131 @@
+{
+ "version": 1,
+ "style": "B2",
+ "width": 1920,
+ "height": 1080,
+ "fps": 30,
+ "voice": {
+  "path": "narration.wav",
+  "lead": 0.15,
+  "tail": 0.5
+ },
+ "captions": [
+  {
+   "start": 0.25,
+   "end": 0.95,
+   "text": "Here is a question"
+  },
+  {
+   "start": 0.99,
+   "end": 2.85,
+   "text": "that sounds too simple to be interesting."
+  },
+  {
+   "start": 3.77,
+   "end": 5.53,
+   "text": "Can you measure anything on its own"
+  },
+  {
+   "start": 5.57,
+   "end": 6.71,
+   "text": "without having a reference?"
+  },
+  {
+   "start": 7.33,
+   "end": 10.03,
+   "text": "A distance, a temperature, intelligence?"
+  },
+  {
+   "start": 11.41,
+   "end": 12.87,
+   "text": "Hold on to that question,"
+  },
+  {
+   "start": 12.91,
+   "end": 15.61,
+   "text": "because if we follow it honestly step by step,"
+  },
+  {
+   "start": 15.65,
+   "end": 17.97,
+   "text": "it takes us somewhere I did not expect."
+  },
+  {
+   "start": 18.65,
+   "end": 21.03,
+   "text": "Say you are standing ten metres away from me."
+  },
+  {
+   "start": 21.07,
+   "end": 22.27,
+   "text": "I am the starting point,"
+  },
+  {
+   "start": 22.31,
+   "end": 23.95,
+   "text": "the zero on the tape."
+  },
+  {
+   "start": 23.99,
+   "end": 25.45,
+   "text": "Now walk over to me,"
+  },
+  {
+   "start": 25.49,
+   "end": 26.57,
+   "text": "hand me the tape,"
+  },
+  {
+   "start": 26.61,
+   "end": 29.29,
+   "text": "and measure the same gap from where you stand."
+  },
+  {
+   "start": 29.33,
+   "end": 31.09,
+   "text": "Same distance, different reference."
+  },
+  {
+   "start": 31.71,
+   "end": 33.73,
+   "text": "Nothing is measured absolutely."
+  },
+  {
+   "start": 33.77,
+   "end": 35.21,
+   "text": "Every number we ever write down"
+  },
+  {
+   "start": 35.25,
+   "end": 37.83,
+   "text": "quietly carries a second piece of information:"
+  },
+  {
+   "start": 37.87,
+   "end": 39.31,
+   "text": "the place it was measured from."
+  }
+ ],
+ "shots": [
+  {
+   "start": 0,
+   "end": 18.65,
+   "layers": [
+    {
+     "type": "image",
+     "path": "art/s01-bg.png",
+     "x": 0,
+     "y": 0,
+     "w": 1280,
+     "h": 720
+    },
+    {
+     "type": "text",
+     "id": "s1-heading",
+     "text": "CAN YOU MEASURE IT?",
+     "x": 70,
+     "y": 40,
+     "size": 50,
+     "color": "#3a2f28",
+     "keys": [
+      {
+       "t": 3.7,
+       "alpha": 0
+      },
+      {
+       "t": 4.2,
+       "alpha": 1
+      },
+      {
+       "t": 12.4,
+       "alpha": 1
+      },
+      {
+       "t": 13.2,
+       "alpha": 0
+      }
+     ]
+    },
+    {
+     "type": "image",
+     "id": "icon-ruler",
+     "path": "art/icon-ruler.png",
+     "x": 610,
+     "y": 160,
+     "w": 175,
+     "motion": {
+      "role": "prop",
+      "reason": "A ruler appears on 'a distance'"
+     },
+     "keys": [
+      {
+       "t": 7.45,
+       "y": 160,
+       "alpha": 0
+      },
+      {
+       "t": 7.9,
+       "y": 130,
+       "alpha": 1
+      },
+      {
+       "t": 8.55,
+       "y": 126
+      },
+      {
+       "t": 9.55,
+       "y": 134
+      },
+      {
+       "t": 10.55,
+       "y": 126
+      },
+      {
+       "t": 11.45,
+       "x": 610,
+       "y": 130,
+       "w": 175,
+       "alpha": 1
+      },
+      {
+       "t": 13.0,
+       "x": 295.5,
+       "y": 150,
+       "w": 78.75,
+       "alpha": 0
+      }
+     ]
+    },
+    {
+     "type": "image",
+     "id": "icon-thermometer",
+     "path": "art/icon-thermometer.png",
+     "x": 850,
+     "y": 125,
+     "w": 52,
+     "motion": {
+      "role": "prop",
+      "reason": "A thermometer appears on 'a temperature'"
+     },
+     "keys": [
+      {
+       "t": 8.35,
+       "y": 125,
+       "alpha": 0
+      },
+      {
+       "t": 8.799999999999999,
+       "y": 95,
+       "alpha": 1
+      },
+      {
+       "t": 9.45,
+       "y": 91
+      },
+      {
+       "t": 10.45,
+       "y": 99
+      },
+      {
+       "t": 11.45,
+       "x": 850,
+       "y": 95,
+       "w": 52,
+       "alpha": 1
+      },
+      {
+       "t": 13.0,
+       "x": 331.5,
+       "y": 150,
+       "w": 23.400000000000002,
+       "alpha": 0
+      }
+     ]
+    },
+    {
+     "type": "image",
+     "id": "icon-head",
+     "path": "art/icon-head.png",
+     "x": 975,
+     "y": 135,
+     "w": 120,
+     "motion": {
+      "role": "prop",
+      "reason": "A thinking head appears on 'intelligence'"
+     },
+     "keys": [
+      {
+       "t": 9.25,
+       "y": 135,
+       "alpha": 0
+      },
+      {
+       "t": 9.7,
+       "y": 105,
+       "alpha": 1
+      },
+      {
+       "t": 10.35,
+       "y": 101
+      },
+      {
+       "t": 11.45,
+       "x": 975,
+       "y": 105,
+       "w": 120,
+       "alpha": 1
+      },
+      {
+       "t": 13.0,
+       "x": 350.25,
+       "y": 150,
+       "w": 54.0,
+       "alpha": 0
+      }
+     ]
+    },
+    {
+     "type": "line",
+     "id": "s1-path",
+     "points": [
+      [
+       400,
+       600
+      ],
+      [
+       600,
+       580
+      ],
+      [
+       800,
+       557
+      ],
+      [
+       1000,
+       533
+      ],
+      [
+       1200,
+       512
+      ]
+     ],
+     "color": "#b5603f",
+     "lineWidth": 3,
+     "motion": {
+      "role": "information",
+      "reason": "A path appears ahead as he decides to follow the question"
+     },
+     "keys": [
+      {
+       "t": 13.0,
+       "progress": 0
+      },
+      {
+       "t": 16.5,
+       "progress": 1
+      }
+     ]
+    },
+    {
+     "type": "image",
+     "id": "narrator-s1",
+     "path": "art/s01-narrator-tape.png",
+     "x": -180,
+     "y": 275,
+     "w": 190,
+     "motion": {
+      "role": "actor",
+      "reason": "The narrator arrives with his tape, is puzzled, then sets off up the hill"
+     },
+     "keys": [
+      {
+       "t": 0,
+       "x": -180,
+       "y": 275,
+       "alpha": 1
+      },
+      {
+       "t": 2.0,
+       "x": 230,
+       "y": 275
+      },
+      {
+       "t": 2.6,
+       "y": 270,
+       "angle": -0.02
+      },
+      {
+       "t": 3.8,
+       "y": 280,
+       "angle": 0.02
+      },
+      {
+       "t": 5.0,
+       "y": 270,
+       "angle": -0.02
+      },
+      {
+       "t": 5.2,
+       "angle": 0.0
+      },
+      {
+       "t": 5.9,
+       "angle": -0.07
+      },
+      {
+       "t": 6.7,
+       "angle": 0.0
+      },
+      {
+       "t": 7.4,
+       "y": 271,
+       "angle": -0.02
+      },
+      {
+       "t": 8.7,
+       "y": 279,
+       "angle": 0.02
+      },
+      {
+       "t": 10.0,
+       "y": 271,
+       "angle": -0.02
+      },
+      {
+       "t": 11.3,
+       "y": 279,
+       "angle": 0.02
+      },
+      {
+       "t": 12.6,
+       "y": 271,
+       "angle": -0.02
+      },
+      {
+       "t": 12.9,
+       "x": 230,
+       "y": 275
+      },
+      {
+       "t": 14.9,
+       "x": 420,
+       "y": 265
+      },
+      {
+       "t": 17.0,
+       "x": 640,
+       "y": 249
+      },
+      {
+       "t": 18.6,
+       "x": 760,
+       "y": 241
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "start": 18.65,
+   "end": 29.33,
+   "layers": [
+    {
+     "type": "image",
+     "path": "art/s02-bg.png",
+     "x": 0,
+     "y": 0,
+     "w": 1280,
+     "h": 720
+    },
+    {
+     "type": "text",
+     "id": "s2-heading",
+     "text": "TEN METRES FROM WHOM?",
+     "x": 70,
+     "y": 40,
+     "size": 50,
+     "color": "#3a2f28",
+     "keys": [
+      {
+       "t": 0.2,
+       "alpha": 0
+      },
+      {
+       "t": 0.8,
+       "alpha": 1
+      }
+     ]
+    },
+    {
+     "type": "image",
+     "id": "tape-1",
+     "path": "art/s02-tape-long.png",
+     "x": 333,
+     "y": 432,
+     "w": 10,
+     "motion": {
+      "role": "prop",
+      "reason": "The tape runs out to the friend, then rolls back as he walks over"
+     },
+     "keys": [
+      {
+       "t": 4.3,
+       "w": 10,
+       "alpha": 0
+      },
+      {
+       "t": 4.4,
+       "alpha": 1
+      },
+      {
+       "t": 5.25,
+       "w": 571
+      },
+      {
+       "t": 5.45,
+       "w": 571
+      },
+      {
+       "t": 5.95,
+       "alpha": 1
+      },
+      {
+       "t": 6.55,
+       "w": 200,
+       "alpha": 0
+      }
+     ]
+    },
+    {
+     "type": "image",
+     "id": "tape-2",
+     "path": "art/s02-tape-long.png",
+     "x": 894,
+     "y": 450,
+     "w": 10,
+     "motion": {
+      "role": "prop",
+      "reason": "Measured again from the friend's side: same gap, new zero"
+     },
+     "keys": [
+      {
+       "t": 9.45,
+       "x": 894,
+       "w": 10,
+       "alpha": 0
+      },
+      {
+       "t": 9.55,
+       "alpha": 1
+      },
+      {
+       "t": 10.6,
+       "x": 333,
+       "w": 571
+      }
+     ]
+    },
+    {
+     "type": "image",
+     "id": "narrator-s2",
+     "path": "art/s02-narrator-hook.png",
+     "x": 110,
+     "y": 342,
+     "w": 240,
+     "motion": {
+      "role": "actor",
+      "reason": "The narrator holds the zero of the tape against his chest"
+     },
+     "keys": [
+      {
+       "t": 0.2,
+       "y": 338,
+       "angle": -0.012
+      },
+      {
+       "t": 1.45,
+       "y": 346,
+       "angle": 0.012
+      },
+      {
+       "t": 2.7,
+       "y": 338,
+       "angle": -0.012
+      },
+      {
+       "t": 3.95,
+       "y": 346,
+       "angle": 0.012
+      },
+      {
+       "t": 5.2,
+       "y": 338,
+       "angle": -0.012
+      },
+      {
+       "t": 6.45,
+       "y": 346,
+       "angle": 0.012
+      },
+      {
+       "t": 7.7,
+       "y": 338,
+       "angle": -0.012
+      },
+      {
+       "t": 8.95,
+       "y": 346,
+       "angle": 0.012
+      },
+      {
+       "t": 10.2,
+       "y": 338,
+       "angle": -0.012
+      }
+     ]
+    },
+    {
+     "type": "image",
+     "id": "friend",
+     "path": "art/s02-friend.png",
+     "x": 1320,
+     "y": 345,
+     "w": 150,
+     "motion": {
+      "role": "actor",
+      "reason": "The friend stands ten metres away, walks over, then measures from his own spot"
+     },
+     "keys": [
+      {
+       "t": 0.1,
+       "x": 1320,
+       "y": 345
+      },
+      {
+       "t": 1.8,
+       "x": 900,
+       "y": 345
+      },
+      {
+       "t": 2.4,
+       "y": 341,
+       "angle": -0.015
+      },
+      {
+       "t": 3.5,
+       "y": 349,
+       "angle": 0.015
+      },
+      {
+       "t": 4.6,
+       "y": 341,
+       "angle": -0.015
+      },
+      {
+       "t": 5.35,
+       "x": 900,
+       "y": 345
+      },
+      {
+       "t": 6.55,
+       "x": 420,
+       "y": 345
+      },
+      {
+       "t": 7.9,
+       "x": 420,
+       "y": 345
+      },
+      {
+       "t": 9.75,
+       "x": 900,
+       "y": 345
+      },
+      {
+       "t": 10.15,
+       "y": 342,
+       "angle": -0.01
+      },
+      {
+       "t": 10.65,
+       "y": 348,
+       "angle": 0.01
+      }
+     ]
+    },
+    {
+     "type": "image",
+     "id": "ring-me",
+     "path": "art/s02-zero-ring.png",
+     "x": 137,
+     "y": 434,
+     "w": 60,
+     "motion": {
+      "role": "information",
+      "reason": "The glowing zero marks the narrator as the reference"
+     },
+     "keys": [
+      {
+       "t": 3.75,
+       "alpha": 0,
+       "w": 30,
+       "x": 152,
+       "y": 449
+      },
+      {
+       "t": 4.1,
+       "alpha": 1,
+       "w": 70,
+       "x": 132,
+       "y": 429
+      },
+      {
+       "t": 4.4,
+       "w": 60,
+       "x": 137,
+       "y": 434
+      },
+      {
+       "t": 8.95,
+       "alpha": 1
+      },
+      {
+       "t": 9.35,
+       "alpha": 0
+      }
+     ]
+    },
+    {
+     "type": "image",
+     "id": "ring-friend",
+     "path": "art/s02-zero-ring.png",
+     "x": 972,
+     "y": 431,
+     "w": 60,
+     "motion": {
+      "role": "information",
+      "reason": "The zero jumps to the friend: now he is the reference"
+     },
+     "keys": [
+      {
+       "t": 9.7,
+       "alpha": 0,
+       "w": 30,
+       "x": 987,
+       "y": 446
+      },
+      {
+       "t": 10.05,
+       "alpha": 1,
+       "w": 70,
+       "x": 967,
+       "y": 426
+      },
+      {
+       "t": 10.35,
+       "w": 60,
+       "x": 972,
+       "y": 431
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "start": 29.33,
+   "end": 40.11,
+   "layers": [
+    {
+     "type": "image",
+     "path": "art/s02-bg.png",
+     "x": 0,
+     "y": 0,
+     "w": 1280,
+     "h": 720
+    },
+    {
+     "type": "text",
+     "id": "s3-heading",
+     "text": "TEN METRES FROM WHOM?",
+     "x": 70,
+     "y": 40,
+     "size": 50,
+     "color": "#3a2f28"
+    },
+    {
+     "type": "image",
+     "id": "tape-both",
+     "path": "art/s02-tape-long.png",
+     "x": 333,
+     "y": 450,
+     "w": 571
+    },
+    {
+     "type": "image",
+     "id": "narrator-s3",
+     "path": "art/s02-narrator-hook.png",
+     "x": 110,
+     "y": 342,
+     "w": 240,
+     "motion": {
+      "role": "actor",
+      "reason": "Both men stand at the two ends of the same gap"
+     },
+     "keys": [
+      {
+       "t": 0.1,
+       "y": 338,
+       "angle": -0.012
+      },
+      {
+       "t": 1.35,
+       "y": 346,
+       "angle": 0.012
+      },
+      {
+       "t": 2.6,
+       "y": 338,
+       "angle": -0.012
+      },
+      {
+       "t": 3.85,
+       "y": 346,
+       "angle": 0.012
+      },
+      {
+       "t": 5.1,
+       "y": 338,
+       "angle": -0.012
+      },
+      {
+       "t": 6.35,
+       "y": 346,
+       "angle": 0.012
+      },
+      {
+       "t": 7.6,
+       "y": 338,
+       "angle": -0.012
+      },
+      {
+       "t": 8.85,
+       "y": 346,
+       "angle": 0.012
+      },
+      {
+       "t": 10.1,
+       "y": 338,
+       "angle": -0.012
+      }
+     ]
+    },
+    {
+     "type": "image",
+     "id": "friend-s3",
+     "path": "art/s02-friend.png",
+     "x": 900,
+     "y": 345,
+     "w": 150,
+     "motion": {
+      "role": "actor",
+      "reason": "The friend holds the other end"
+     },
+     "keys": [
+      {
+       "t": 0.6,
+       "y": 341,
+       "angle": -0.015
+      },
+      {
+       "t": 1.7,
+       "y": 349,
+       "angle": 0.015
+      },
+      {
+       "t": 2.8,
+       "y": 341,
+       "angle": -0.015
+      },
+      {
+       "t": 3.9,
+       "y": 349,
+       "angle": 0.015
+      },
+      {
+       "t": 5.0,
+       "y": 341,
+       "angle": -0.015
+      },
+      {
+       "t": 6.1,
+       "y": 349,
+       "angle": 0.015
+      },
+      {
+       "t": 7.2,
+       "y": 341,
+       "angle": -0.015
+      },
+      {
+       "t": 8.3,
+       "y": 349,
+       "angle": 0.015
+      },
+      {
+       "t": 9.4,
+       "y": 341,
+       "angle": -0.015
+      },
+      {
+       "t": 10.5,
+       "y": 349,
+       "angle": 0.015
+      }
+     ]
+    },
+    {
+     "type": "image",
+     "id": "ring-me-2",
+     "path": "art/s02-zero-ring.png",
+     "x": 137,
+     "y": 434,
+     "w": 60,
+     "motion": {
+      "role": "information",
+      "reason": "'Same distance': the zero returns to the narrator"
+     },
+     "keys": [
+      {
+       "t": 0.05,
+       "alpha": 0,
+       "w": 30,
+       "x": 152,
+       "y": 449
+      },
+      {
+       "t": 0.4,
+       "alpha": 1,
+       "w": 70,
+       "x": 132,
+       "y": 429
+      },
+      {
+       "t": 0.7,
+       "w": 60,
+       "x": 137,
+       "y": 434
+      }
+     ]
+    },
+    {
+     "type": "image",
+     "id": "ring-friend-2",
+     "path": "art/s02-zero-ring.png",
+     "x": 972,
+     "y": 431,
+     "w": 60,
+     "motion": {
+      "role": "information",
+      "reason": "'Different reference': the friend's zero pulses"
+     },
+     "keys": [
+      {
+       "t": 0.9,
+       "w": 60,
+       "x": 972,
+       "y": 431
+      },
+      {
+       "t": 1.2,
+       "w": 76,
+       "x": 964,
+       "y": 423
+      },
+      {
+       "t": 1.55,
+       "w": 60,
+       "x": 972,
+       "y": 431
+      }
+     ]
+    },
+    {
+     "type": "text",
+     "id": "label-10m",
+     "text": "10 m",
+     "x": 590,
+     "y": 300,
+     "size": 58,
+     "color": "#b5603f",
+     "keys": [
+      {
+       "t": 2.37,
+       "alpha": 0,
+       "y": 320
+      },
+      {
+       "t": 2.87,
+       "alpha": 1,
+       "y": 300
+      }
+     ]
+    },
+    {
+     "type": "text",
+     "id": "label-from",
+     "text": "...from where?",
+     "x": 545,
+     "y": 368,
+     "size": 40,
+     "color": "#3a2f28",
+     "keys": [
+      {
+       "t": 6.67,
+       "alpha": 0,
+       "y": 384
+      },
+      {
+       "t": 7.17,
+       "alpha": 1,
+       "y": 368
+      }
+     ]
+    },
+    {
+     "type": "arrow",
+     "id": "arrow-me",
+     "x": 532,
+     "y": 392,
+     "w": 326,
+     "angle": 2.994,
+     "color": "#b5603f",
+     "lineWidth": 3,
+     "motion": {
+      "role": "information",
+      "reason": "The place it was measured from: here"
+     },
+     "keys": [
+      {
+       "t": 8.57,
+       "progress": 0
+      },
+      {
+       "t": 9.27,
+       "progress": 1
+      }
+     ]
+    },
+    {
+     "type": "arrow",
+     "id": "arrow-friend",
+     "x": 760,
+     "y": 392,
+     "w": 206,
+     "angle": 0.236,
+     "color": "#b5603f",
+     "lineWidth": 3,
+     "motion": {
+      "role": "information",
+      "reason": "...or here"
+     },
+     "keys": [
+      {
+       "t": 9.17,
+       "progress": 0
+      },
+      {
+       "t": 9.87,
+       "progress": 1
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "music": {
+  "path": "../music/Snowfall - Asher Fulero.mp3",
+  "gain": 0.06
+ },
+ "ambience": [
+  {
+   "path": "sound/ambience-outdoor-cc0.ogg",
+   "start": 0,
+   "end": 18.65,
+   "gain": 0.025,
+   "fadeIn": 1.0,
+   "fadeOut": 0.6
+  },
+  {
+   "path": "sound/ambience-outdoor-cc0.ogg",
+   "start": 18.65,
+   "end": 40.11,
+   "gain": 0.035,
+   "offset": 8.0,
+   "fadeIn": 0.6,
+   "fadeOut": 1.0
+  }
+ ],
+ "sfx": [
+  {
+   "time": 3.8,
+   "kind": "paper",
+   "gain": 0.05
+  },
+  {
+   "time": 7.5,
+   "kind": "pop",
+   "gain": 0.02
+  },
+  {
+   "time": 8.4,
+   "kind": "pop",
+   "gain": 0.02
+  },
+  {
+   "time": 9.3,
+   "kind": "pop",
+   "gain": 0.02
+  },
+  {
+   "time": 18.85,
+   "kind": "paper",
+   "gain": 0.05
+  },
+  {
+   "time": 22.55,
+   "kind": "chime",
+   "gain": 0.03
+  },
+  {
+   "time": 23.1,
+   "kind": "tap",
+   "gain": 0.04
+  },
+  {
+   "time": 28.4,
+   "kind": "chime",
+   "gain": 0.03
+  },
+  {
+   "time": 29.45,
+   "kind": "chime",
+   "gain": 0.025
+  },
+  {
+   "time": 31.75,
+   "kind": "paper",
+   "gain": 0.05
+  }
+ ],
+ "reference_review": {
+  "author_id": "claude-code-session",
+  "capability": {
+   "mode": "sample_target",
+   "environment": "Claude Code cloud session; illustrations generated by the author in Google Flow and cut out locally",
+   "limitations": [
+    "Characters are flat cut-outs without articulated limbs; motion is whole-figure movement",
+    "The agent cannot listen to audio; the mix must be checked by ear by the author"
+   ]
+  }
+ }
+}

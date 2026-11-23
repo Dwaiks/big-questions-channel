@@ -1,0 +1,97 @@
+[
+ {
+  "start": 0.25,
+  "end": 0.95,
+  "text": "Here is a question"
+ },
+ {
+  "start": 0.99,
+  "end": 2.85,
+  "text": "that sounds too simple to be interesting."
+ },
+ {
+  "start": 3.77,
+  "end": 5.53,
+  "text": "Can you measure anything on its own"
+ },
+ {
+  "start": 5.57,
+  "end": 6.71,
+  "text": "without having a reference?"
+ },
+ {
+  "start": 7.33,
+  "end": 10.03,
+  "text": "A distance, a temperature, intelligence?"
+ },
+ {
+  "start": 11.41,
+  "end": 12.87,
+  "text": "Hold on to that question,"
+ },
+ {
+  "start": 12.91,
+  "end": 15.61,
+  "text": "because if we follow it honestly step by step,"
+ },
+ {
+  "start": 15.65,
+  "end": 17.97,
+  "text": "it takes us somewhere I did not expect."
+ },
+ {
+  "start": 18.65,
+  "end": 21.03,
+  "text": "Say you are standing ten metres away from me."
+ },
+ {
+  "start": 21.07,
+  "end": 22.27,
+  "text": "I am the starting point,"
+ },
+ {
+  "start": 22.31,
+  "end": 23.95,
+  "text": "the zero on the tape."
+ },
+ {
+  "start": 23.99,
+  "end": 25.45,
+  "text": "Now walk over to me,"
+ },
+ {
+  "start": 25.49,
+  "end": 26.57,
+  "text": "hand me the tape,"
+ },
+ {
+  "start": 26.61,
+  "end": 29.29,
+  "text": "and measure the same gap from where you stand."
+ },
+ {
+  "start": 29.33,
+  "end": 31.09,
+  "text": "Same distance, different reference."
+ },
+ {
+  "start": 31.71,
+  "end": 33.73,
+  "text": "Nothing is measured absolutely."
+ },
+ {
+  "start": 33.77,
+  "end": 35.21,
+  "text": "Every number we ever write down"
+ },
+ {
+  "start": 35.25,
+  "end": 37.83,
+  "text": "quietly carries a second piece of information:"
+ },
+ {
+  "start": 37.87,
+  "end": 39.31,
+  "text": "the place it was measured from."
+ }
+]
