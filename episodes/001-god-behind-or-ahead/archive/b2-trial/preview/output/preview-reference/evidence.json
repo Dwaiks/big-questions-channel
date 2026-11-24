@@ -1,0 +1,476 @@
+{
+  "schema": 1,
+  "status": "pending_independent_review",
+  "style": "B2",
+  "output": "/home/user/big-questions-channel/episodes/001-god-behind-or-ahead/preview/output/preview.mp4",
+  "output_sha256": "078b60e42c31c7c22a88d14132a193c2b7f35df4fd2b8314b5c76e5be7e98ca3",
+  "project_fingerprint": "169cd01f5574a4d73e692671696b0bc50b1f594f4ccabb73bdc6917e9f826b3a",
+  "project_inputs": {
+    "file": "/home/user/big-questions-channel/episodes/001-god-behind-or-ahead/preview/project.json",
+    "inputs": [
+      {
+        "path": "/home/user/big-questions-channel/episodes/001-god-behind-or-ahead/music/Snowfall - Asher Fulero.mp3",
+        "sha256": "547ed53f39c5b153fe2d3ebe26b1700ab5a13bf156b3898d2216669d732519e5"
+      },
+      {
+        "path": "/home/user/big-questions-channel/episodes/001-god-behind-or-ahead/preview/art/icon-head.png",
+        "sha256": "4c05620be32ebcbf4e7688b3385b52d9f0a03f3caee2c5e83ecb5f929bdb2dcb"
+      },
+      {
+        "path": "/home/user/big-questions-channel/episodes/001-god-behind-or-ahead/preview/art/icon-ruler.png",
+        "sha256": "292791f1b58f9575f7adf6acbdfa53223998b065360a4ad33cadf22463f157c8"
+      },
+      {
+        "path": "/home/user/big-questions-channel/episodes/001-god-behind-or-ahead/preview/art/icon-thermometer.png",
+        "sha256": "cd8e48fda0dbc9fae861f19b283b5af0c35af31e36861b0200787ad86a4c51b0"
+      },
+      {
+        "path": "/home/user/big-questions-channel/episodes/001-god-behind-or-ahead/preview/art/s01-bg.png",
+        "sha256": "efaf108161ed48eb73c35a3f4c608ed956ef752ccb8af8bdbfde6297a247dd41"
+      },
+      {
+        "path": "/home/user/big-questions-channel/episodes/001-god-behind-or-ahead/preview/art/s01-narrator-tape.png",
+        "sha256": "c59a1f7b7e9dfc7deb2193bb303cd2830fd9d93c33e4a8c9087f2f4f42fcfee7"
+      },
+      {
+        "path": "/home/user/big-questions-channel/episodes/001-god-behind-or-ahead/preview/art/s02-bg.png",
+        "sha256": "e2fae5c02454a697aa45c3cde99b2affaf6ca85407f9a7e637c8626933bdfe1a"
+      },
+      {
+        "path": "/home/user/big-questions-channel/episodes/001-god-behind-or-ahead/preview/art/s02-friend.png",
+        "sha256": "5e5050121d291b214cf164c5f440c4f34ad2e2b9e0650a310ab1ab2ca06a94b7"
+      },
+      {
+        "path": "/home/user/big-questions-channel/episodes/001-god-behind-or-ahead/preview/art/s02-narrator-hook.png",
+        "sha256": "061b66dfd0004a60a6338c5340946ac0f0b76e3c17a324ad68391167511dd8aa"
+      },
+      {
+        "path": "/home/user/big-questions-channel/episodes/001-god-behind-or-ahead/preview/art/s02-tape-long.png",
+        "sha256": "fa5bfe6b0fbc21421a85e5eb86be6c1a8f21107f1881080bd083346145973d09"
+      },
+      {
+        "path": "/home/user/big-questions-channel/episodes/001-god-behind-or-ahead/preview/art/s02-zero-ring.png",
+        "sha256": "d67e1ea475834e35da0741db522ec078fbd6b43c7fadd438cbe106cde1164155"
+      },
+      {
+        "path": "/home/user/big-questions-channel/episodes/001-god-behind-or-ahead/preview/narration.wav",
+        "sha256": "74274ba132a30b380dcf18a6b2839a674f368f31fed071cee4d8c9395b5bb0c9"
+      },
+      {
+        "path": "/home/user/big-questions-channel/episodes/001-god-behind-or-ahead/preview/sound/ambience-outdoor-cc0.ogg",
+        "sha256": "5af2486b996457462cebb0f50beeb7014a9ca973b00605171c05b11671124fc6"
+      },
+      {
+        "path": "/root/.claude/skills/directing-stickman-videos/assets/b2/approved-style-board.jpg",
+        "sha256": "6632fb3987b63f53f6eea8588e5c27e8d2531b9fd0b283d01a30e34ab44bda5d"
+      },
+      {
+        "path": "/root/.claude/skills/directing-stickman-videos/assets/b2/approved-style-board.json",
+        "sha256": "dbea4f18703402538f9f8b6f00fb1b7d87df73dedaf3e9f4fb0a6299d2bde169"
+      },
+      {
+        "path": "/root/.claude/skills/directing-stickman-videos/assets/b2/public-showcase.json",
+        "sha256": "74f54f25a831363269767d22cccb1591b204169b03da3059c9408fb54b48554f"
+      },
+      {
+        "path": "/root/.claude/skills/directing-stickman-videos/assets/b2/public-showcases/b2-colorful-phone-weather.mp4",
+        "sha256": "b03f6c963f71639a146f1ea209140675306967468482efd1620580bf7d6aa2e6"
+      },
+      {
+        "path": "/root/.claude/skills/directing-stickman-videos/assets/b2/public-showcases/b2-colorful-sleep.mp4",
+        "sha256": "ff918555b4a9d36596eea942f55b7d4e398210c496aa9cb919c7bb48aa78766e"
+      },
+      {
+        "path": "/root/.claude/skills/directing-stickman-videos/assets/fonts/Caveat.ttf",
+        "sha256": "0bdb6b660482d31531b3945849fba5916b3ef8695da7024a9e6b9ee3c4157988"
+      },
+      {
+        "path": "/root/.claude/skills/directing-stickman-videos/assets/fonts/NotoSans.ttf",
+        "sha256": "bfb7bb691513f12e734dc346c03a03f784912432d7e3fa8e56efcf906fe86b3d"
+      }
+    ]
+  },
+  "plan_sha256": "358b5d7f4cd0649c6b27f13101df1691d371c71e6b4e8930d7ccb47048416def",
+  "scope": {
+    "start": 0,
+    "end": 40.11
+  },
+  "metadata": {
+    "width": 1920,
+    "height": 1080,
+    "fps": 30,
+    "average_fps": 30,
+    "duration": 40.133333,
+    "frames": 1204,
+    "frame_timing_sha256": "d1b600ac42fa337792d5baf18e5d2e66e8d46195a6a4e0d3bd629e3b77a95603",
+    "max_step_error": 6.666666701946045e-7,
+    "video_codec": "h264",
+    "audio": [
+      {
+        "codec": "aac",
+        "sample_rate": 44100,
+        "channels": 1
+      }
+    ]
+  },
+  "plan": {
+    "schema": 1,
+    "style": "B2",
+    "author_id": "claude-code-session",
+    "capability": {
+      "environment": "Claude Code cloud session; illustrations generated by the author in Google Flow and cut out locally",
+      "limitations": [
+        "Characters are flat cut-outs without articulated limbs; motion is whole-figure movement",
+        "The agent cannot listen to audio; the mix must be checked by ear by the author"
+      ],
+      "mode": "sample_target"
+    },
+    "width": 1920,
+    "height": 1080,
+    "fps": 30,
+    "scope_start": 0,
+    "scope_end": 40.11,
+    "frame_count": 1204,
+    "shots": [
+      {
+        "id": "shot-0",
+        "index": 0,
+        "source_id": null,
+        "start": 0,
+        "end": 18.65,
+        "start_frame": 0,
+        "end_frame": 560,
+        "phases": {
+          "start": 0,
+          "mid": 279,
+          "end": 559
+        },
+        "shot_sha256": "00a5ef862655add733fe1299d18c2c734c5d2d25799f87b77a755e95e7e7ce8c"
+      },
+      {
+        "id": "shot-1",
+        "index": 1,
+        "source_id": null,
+        "start": 18.65,
+        "end": 29.33,
+        "start_frame": 560,
+        "end_frame": 880,
+        "phases": {
+          "start": 560,
+          "mid": 719,
+          "end": 879
+        },
+        "shot_sha256": "0680e74ec6ebdeed618b77f876b32d12e2f3a644e02856540e41b84dbff06002"
+      },
+      {
+        "id": "shot-2",
+        "index": 2,
+        "source_id": null,
+        "start": 29.33,
+        "end": 40.11,
+        "start_frame": 880,
+        "end_frame": 1204,
+        "phases": {
+          "start": 880,
+          "mid": 1041,
+          "end": 1203
+        },
+        "shot_sha256": "b8c527e205ec8a34f719d007f2d6883bdcd43560a3d86702e16018db166087bd"
+      }
+    ],
+    "caption_sha256": "8bcfb6ee5cd64e5a75124720b4198f11241c32293bda87508865a32f0fd3ee39",
+    "reference_ids": [
+      "b2-colorful-sleep",
+      "b2-colorful-phone-weather",
+      "b2-approved-style-board"
+    ],
+    "checks": [
+      "color_handdrawn_design",
+      "semantic_motion_states",
+      "contact_continuity",
+      "composition_progression",
+      "typography_captions",
+      "timing_pacing",
+      "sound"
+    ],
+    "limits": [
+      "Hashes, decoded artifacts and complete coverage establish current-media provenance, not aesthetic equivalence.",
+      "Reviewer identity, independence, actual viewing/listening and capability limitations are declarations, not authenticated facts.",
+      "Independent agent review does not imply human approval or user acceptance.",
+      "Sample-target review compares the available approved examples, not identical plots, voices, pixels or unavailable originals.",
+      "B3 endpoint geometry and authored intentions are diagnostics. Each graphic and motion event still needs actual-MP4 independent review; wrong relationships and meaningless motion cannot receive a limited-capability waiver.",
+      "The accepted B2 board contains sampled stills, not motion or sound evidence. Both bundled full public implementations are the available effect targets, not mandatory stories, characters or scene sequences."
+    ]
+  },
+  "references": [
+    {
+      "id": "b2-colorful-sleep",
+      "path": "/root/.claude/skills/directing-stickman-videos/assets/b2/public-showcases/b2-colorful-sleep.mp4",
+      "sha256": "ff918555b4a9d36596eea942f55b7d4e398210c496aa9cb919c7bb48aa78766e",
+      "kind": "video",
+      "role": "public_showcase",
+      "duration": 20,
+      "has_audio": true,
+      "required_comparison": true,
+      "limitations": [
+        "The approved board is sampled visual evidence from the accepted phone/weather v4 implementation, not a clean illustration master, executable project or proof of motion/listening.",
+        "The bundled full samples permit actual picture, caption, timing and sound comparison; their availability does not certify a new film automatically.",
+        "Packaging an existing public sample does not grant a new license to reuse its narration, story, music or scene sequence in a new production.",
+        "Fingerprints and media metadata establish identity and portability, not aesthetic acceptance or proof that a reviewer played/listened to the sample.",
+        "A complete public implementation is an effect target, not an executable production project or a mandatory story/cast/scene sequence."
+      ]
+    },
+    {
+      "id": "b2-colorful-phone-weather",
+      "path": "/root/.claude/skills/directing-stickman-videos/assets/b2/public-showcases/b2-colorful-phone-weather.mp4",
+      "sha256": "b03f6c963f71639a146f1ea209140675306967468482efd1620580bf7d6aa2e6",
+      "kind": "video",
+      "role": "public_showcase",
+      "duration": 61.9,
+      "has_audio": true,
+      "required_comparison": true,
+      "limitations": [
+        "The approved board is sampled visual evidence from the accepted phone/weather v4 implementation, not a clean illustration master, executable project or proof of motion/listening.",
+        "The bundled full samples permit actual picture, caption, timing and sound comparison; their availability does not certify a new film automatically.",
+        "Packaging an existing public sample does not grant a new license to reuse its narration, story, music or scene sequence in a new production.",
+        "Fingerprints and media metadata establish identity and portability, not aesthetic acceptance or proof that a reviewer played/listened to the sample.",
+        "A complete public implementation is an effect target, not an executable production project or a mandatory story/cast/scene sequence.",
+        "Its fingerprint matches B2-Phone-Weather-Full-v4.mp4 recorded in approved-style-board.json. The board contains sampled frames and cannot establish continuous timing or sound."
+      ]
+    },
+    {
+      "id": "b2-approved-style-board",
+      "path": "/root/.claude/skills/directing-stickman-videos/assets/b2/approved-style-board.jpg",
+      "sha256": "6632fb3987b63f53f6eea8588e5c27e8d2531b9fd0b283d01a30e34ab44bda5d",
+      "kind": "image",
+      "role": "approved_style_board",
+      "duration": null,
+      "has_audio": false,
+      "required_comparison": false,
+      "limitations": [
+        "Sampled still board supports drawing, color and caption appearance only; it cannot demonstrate continuous action, timing or sound."
+      ]
+    }
+  ],
+  "reference_manifests": [
+    {
+      "path": "/root/.claude/skills/directing-stickman-videos/assets/b2/public-showcase.json",
+      "sha256": "74f54f25a831363269767d22cccb1591b204169b03da3059c9408fb54b48554f"
+    },
+    {
+      "path": "/root/.claude/skills/directing-stickman-videos/assets/b2/approved-style-board.json",
+      "sha256": "dbea4f18703402538f9f8b6f00fb1b7d87df73dedaf3e9f4fb0a6299d2bde169"
+    }
+  ],
+  "artifacts": [
+    {
+      "id": "shot-0-start",
+      "shot": "shot-0",
+      "type": "png",
+      "phase": "start",
+      "frame_index": 0,
+      "source_time": 0,
+      "crop": [
+        0,
+        0,
+        1920,
+        1080
+      ],
+      "file": "shot-0-start.png",
+      "sha256": "0f011cb68fd4af7b1731b87bc4f9d3c7bd96f81961358ece60db875ffddc59fe"
+    },
+    {
+      "id": "shot-0-mid",
+      "shot": "shot-0",
+      "type": "png",
+      "phase": "mid",
+      "frame_index": 279,
+      "source_time": 9.3,
+      "crop": [
+        0,
+        0,
+        1920,
+        1080
+      ],
+      "file": "shot-0-mid.png",
+      "sha256": "41620f7b284c174341706f43692685777d9532db0b0e574dda41bf5c80408522"
+    },
+    {
+      "id": "shot-0-end",
+      "shot": "shot-0",
+      "type": "png",
+      "phase": "end",
+      "frame_index": 559,
+      "source_time": 18.633333,
+      "crop": [
+        0,
+        0,
+        1920,
+        1080
+      ],
+      "file": "shot-0-end.png",
+      "sha256": "a0d4ac0c9e0e8753fe75faa31cea039215bf69ad83d5d86207f44edd52f4dd6f"
+    },
+    {
+      "id": "shot-0-continuous",
+      "shot": "shot-0",
+      "type": "clip",
+      "start_frame": 0,
+      "end_frame": 560,
+      "source_start": 0,
+      "source_end": 18.666667,
+      "crop": [
+        0,
+        0,
+        1920,
+        1080
+      ],
+      "audio": "source",
+      "file": "shot-0-continuous.mp4",
+      "sha256": "0d0bdccf824fc387a15d7da8373805f0a72d1f497b49d186016afc05d242146d"
+    },
+    {
+      "id": "shot-1-start",
+      "shot": "shot-1",
+      "type": "png",
+      "phase": "start",
+      "frame_index": 560,
+      "source_time": 18.666667,
+      "crop": [
+        0,
+        0,
+        1920,
+        1080
+      ],
+      "file": "shot-1-start.png",
+      "sha256": "9067149ba53e33fc6151af0de33fa4320b033e811fcd3c900a39467246f3e1b4"
+    },
+    {
+      "id": "shot-1-mid",
+      "shot": "shot-1",
+      "type": "png",
+      "phase": "mid",
+      "frame_index": 719,
+      "source_time": 23.966667,
+      "crop": [
+        0,
+        0,
+        1920,
+        1080
+      ],
+      "file": "shot-1-mid.png",
+      "sha256": "d9d7588f1bbb85ebfa1c249fd4ab93e93e5303e9ee6f4bf4bddb4265b998e215"
+    },
+    {
+      "id": "shot-1-end",
+      "shot": "shot-1",
+      "type": "png",
+      "phase": "end",
+      "frame_index": 879,
+      "source_time": 29.3,
+      "crop": [
+        0,
+        0,
+        1920,
+        1080
+      ],
+      "file": "shot-1-end.png",
+      "sha256": "b95062cb17cb9aa42b0984d91af9003b5f5dd584d0d93b051ac4978085d958d8"
+    },
+    {
+      "id": "shot-1-continuous",
+      "shot": "shot-1",
+      "type": "clip",
+      "start_frame": 560,
+      "end_frame": 880,
+      "source_start": 18.666667,
+      "source_end": 29.333333,
+      "crop": [
+        0,
+        0,
+        1920,
+        1080
+      ],
+      "audio": "source",
+      "file": "shot-1-continuous.mp4",
+      "sha256": "e6095010701a1efc7a4d3a78207a2e1ce6d440ea8899eb136c62118e7549752d"
+    },
+    {
+      "id": "shot-2-start",
+      "shot": "shot-2",
+      "type": "png",
+      "phase": "start",
+      "frame_index": 880,
+      "source_time": 29.333333,
+      "crop": [
+        0,
+        0,
+        1920,
+        1080
+      ],
+      "file": "shot-2-start.png",
+      "sha256": "9dde671a3c3b55511a971bc77d39580a29702f1da41f0abec0b55664ecb9a632"
+    },
+    {
+      "id": "shot-2-mid",
+      "shot": "shot-2",
+      "type": "png",
+      "phase": "mid",
+      "frame_index": 1041,
+      "source_time": 34.7,
+      "crop": [
+        0,
+        0,
+        1920,
+        1080
+      ],
+      "file": "shot-2-mid.png",
+      "sha256": "b0571d85a494e8ea638555f89cf4f153c1ec2d4f2a7fe1d18a7fdc50be2ed302"
+    },
+    {
+      "id": "shot-2-end",
+      "shot": "shot-2",
+      "type": "png",
+      "phase": "end",
+      "frame_index": 1203,
+      "source_time": 40.1,
+      "crop": [
+        0,
+        0,
+        1920,
+        1080
+      ],
+      "file": "shot-2-end.png",
+      "sha256": "5ef1da0718fc424bf7e60a87bf8c5ed7c459cad8091be4284479fa650913042f"
+    },
+    {
+      "id": "shot-2-continuous",
+      "shot": "shot-2",
+      "type": "clip",
+      "start_frame": 880,
+      "end_frame": 1204,
+      "source_start": 29.333333,
+      "source_end": 40.133333,
+      "crop": [
+        0,
+        0,
+        1920,
+        1080
+      ],
+      "audio": "source",
+      "file": "shot-2-continuous.mp4",
+      "sha256": "32859a6b8b526c890ecb9d91a437808d9ff37dc10edd43fc4ecb218472807186"
+    }
+  ],
+  "evidence_dir": "/home/user/big-questions-channel/episodes/001-god-behind-or-ahead/preview/output/preview-reference",
+  "ledger_file": "/home/user/big-questions-channel/episodes/001-god-behind-or-ahead/preview/output/preview-reference/evidence.json",
+  "template_file": "/home/user/big-questions-channel/episodes/001-god-behind-or-ahead/preview/output/preview-reference/review-template.json",
+  "limits": [
+    "Hashes, decoded artifacts and complete coverage establish current-media provenance, not aesthetic equivalence.",
+    "Reviewer identity, independence, actual viewing/listening and capability limitations are declarations, not authenticated facts.",
+    "Independent agent review does not imply human approval or user acceptance.",
+    "Sample-target review compares the available approved examples, not identical plots, voices, pixels or unavailable originals.",
+    "B3 endpoint geometry and authored intentions are diagnostics. Each graphic and motion event still needs actual-MP4 independent review; wrong relationships and meaningless motion cannot receive a limited-capability waiver.",
+    "The accepted B2 board contains sampled stills, not motion or sound evidence. Both bundled full public implementations are the available effect targets, not mandatory stories, characters or scene sequences."
+  ]
+}
