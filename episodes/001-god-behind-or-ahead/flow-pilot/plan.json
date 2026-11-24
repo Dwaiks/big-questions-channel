@@ -1,21 +1,51 @@
 {
-  "clips": [
-    {"file": "upload/c01.mp4", "start": 0.0, "end": 6.9, "crop_top": 20},
-    {"file": "upload/c02.mp4", "start": 6.9, "end": 11.0},
-    {"file": "upload/c03.mp4", "start": 11.0, "end": 18.3},
-    {"file": "upload/c04.mp4", "start": 18.3, "end": 23.6},
-    {"file": "upload/c05.mp4", "start": 23.6, "end": 29.0},
-    {"file": "upload/c06.mp4", "start": 29.0, "end": 33.4},
-    {"file": "upload/c07.mp4", "start": 33.4, "end": 40.0}
-  ],
-  "narration": "../archive/b2-trial/preview/narration.wav",
-  "captions": "../archive/b2-trial/preview/captions.json",
-  "caption_offset": -0.15,
-  "music": "../music/Snowfall - Asher Fulero.mp3",
-  "music_db": -22,
-  "ambience": "../archive/b2-trial/preview/sound/ambience-outdoor-cc0.ogg",
-  "ambience_db": -30,
-  "font_dir": "/root/.claude/skills/directing-stickman-videos/assets/fonts",
-  "work_dir": "work",
-  "output": "episode-001-flow-pilot.mp4"
+ "clips": [
+  {
+   "file": "upload/c01.mp4",
+   "start": 0.0,
+   "end": 6.9,
+   "crop_top": 20
+  },
+  {
+   "file": "upload/c02.mp4",
+   "start": 6.9,
+   "end": 11.0
+  },
+  {
+   "file": "upload/c03.mp4",
+   "start": 11.0,
+   "end": 18.3
+  },
+  {
+   "file": "upload/c04.mp4",
+   "start": 18.3,
+   "end": 23.6
+  },
+  {
+   "file": "upload/c05.mp4",
+   "start": 23.6,
+   "end": 29.0
+  },
+  {
+   "file": "upload/c06.mp4",
+   "start": 29.0,
+   "end": 33.4
+  },
+  {
+   "file": "upload/c07.mp4",
+   "start": 33.4,
+   "end": 40.0,
+   "hold_at": "end"
+  }
+ ],
+ "narration": "../archive/b2-trial/preview/narration.wav",
+ "captions": "../archive/b2-trial/preview/captions.json",
+ "caption_offset": -0.15,
+ "music": "../music/Snowfall - Asher Fulero.mp3",
+ "music_db": -22,
+ "ambience": "../archive/b2-trial/preview/sound/ambience-outdoor-cc0.ogg",
+ "ambience_db": -30,
+ "font_dir": "/root/.claude/skills/directing-stickman-videos/assets/fonts",
+ "work_dir": "work",
+ "output": "episode-001-flow-pilot.mp4"
 }

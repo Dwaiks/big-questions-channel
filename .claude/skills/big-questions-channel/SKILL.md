@@ -14,7 +14,7 @@ One person runs this faceless YouTube channel next to a full-time job, with 3–
 - **Pillars**, rotated: Science & universe → The mind → History & civilisation → Technology & future → Philosophy & meaning.
 - **Author's voice:** read [author voice](references/author-voice.md). Use the author's stories and ideas only as they wrote them; never invent biography.
 - **Format:** long video 8–12 min (1,200–1,700 words, English); 2–3 Shorts of 30–55 s; dubbing added later.
-- **Look:** B2 Colorful Hand-Drawn from directing-stickman-videos, one continuous music track, one narration track.
+- **Look:** rich illustrated 2D cartoon with expressive faces: silent Google Flow clips assembled to one narration track and one continuous music track (see the production hand-off).
 
 ## Where things live
 
@@ -29,8 +29,8 @@ Ask only for what is missing; otherwise go step by step and stop at each **appro
 1. **Pick.** Take the topic the author names, or the next row by target date in the tracker. Note its tracker #, "our title", twist and gap. Set its status to Researching.
 2. **Research brief** ([template](references/templates.md#1-research-brief)). Use web search and real sources only; check the "gap" against what popular existing videos actually cover, and say plainly if the gap doesn't hold. Flag disputed claims. End with 3 questions for the author's view. **Approval:** the author reads it and retells the idea in 5 sentences; point out gaps gently.
 3. **Script** ([structure](references/templates.md#2-script)). First read the last three lessons in the tracker's Results sheet. Keep the author's argument order when the episode comes from their writing. Hook without giving away the conclusion. Draft the "My view" paragraph from the author's own writing and mark it `[AUTHOR TO REVISE]`. Check against [YouTube rules](references/youtube-rules.md). Status → Scripting. **Approval** of the script and "My view".
-4. **Scene plan and preview** ([production hand-off](references/production-handoff.md)). Turn the approved script into B2 scenes, then hand off to directing-stickman-videos in Autopilot mode. Produce the 20-second preview with sound first. Status → In production. **Approval** of the preview.
-5. **Full render + Shorts.** Render the full video; write and render 2–3 Shorts ([template](references/templates.md#3-shorts)) as native 9:16, not crops.
+4. **Narration, shot list and Flow prompts** ([production hand-off](references/production-handoff.md)). Record the narration, cut it into slots of at most 8 s at natural pauses, and write one timed Flow prompt per slot (exact length and timed beats that fill the whole clip). The author generates the clips; assemble a short preview first. Status → In production. **Approval** of the preview.
+5. **Full assembly + Shorts.** Assemble the full video from all clips; write 2–3 Shorts ([template](references/templates.md#3-shorts)) as native 9:16, not crops.
 6. **Publishing pack** ([template](references/templates.md#4-publishing-pack)). Status → Scheduled with the date. The author uploads.
 7. **7-day review** ([template](references/templates.md#5-7-day-review)). From the numbers the author gives, write one lesson; add the row to Results with what the author learned about the topic and which craft skill was practised.
 

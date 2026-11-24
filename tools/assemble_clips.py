@@ -8,8 +8,8 @@
 #             "caption_offset", "music", "music_db", "ambience"?, "ambience_db"?, "output", "work_dir"}
 import json, os, subprocess, sys
 
-MIN_SPEED = 0.75
-FPS = 30
+MIN_SPEED = 0.7
+FPS = 24  # Flow clips are 24 fps; converting to 30 makes cartoon motion stutter
 W, H = 1920, 1080
 
 
@@ -24,27 +24,45 @@ def duration(path):
 
 
 def fit_clip(c, work, idx):
+    """Fit a clip to its slot without stutter or mid-action freezes.
+
+    - stays at the clip's native 24 fps;
+    - slows down only when needed (never below MIN_SPEED), using motion interpolation so slow motion stays smooth;
+    - any time still missing is added at the START (before the action), never as a frozen last frame;
+    - a very slow camera push-in runs over the whole clip so a held start doesn't feel frozen;
+    - clips longer than their slot are trimmed at the end.
+    """
     slot = c['end'] - c['start']
     src = c['file']
     skip = c.get('skip', 0.0)
     length = duration(src) - skip
-    speed = max(MIN_SPEED, min(1.0, length / slot))
+    speed = c.get('speed') or max(MIN_SPEED, min(1.0, length / slot))
+    if speed > 0.95:
+        speed = 1.0
     played = length / speed
     hold = max(0.0, slot - played)
+    hold_at = c.get('hold_at', 'start')
     crop = c.get('crop_top', 0)
     vf = []
     if skip:
         vf.append(f'trim=start={skip},setpts=PTS-STARTPTS')
     if crop:
         vf.append(f'crop=iw:ih-{crop}:0:{crop}')
-    vf += [f'scale={W}:{H}:force_original_aspect_ratio=increase', f'crop={W}:{H}',
-           f'setpts=PTS/{speed:.4f}', f'fps={FPS}']
+    vf += [f'scale={W}:{H}:force_original_aspect_ratio=increase', f'crop={W}:{H}', f'fps={FPS}']
+    if speed < 1.0:
+        vf += [f'minterpolate=fps={FPS / speed:.3f}:mi_mode=mci:mc_mode=aobmc:me_mode=bidir:vsbmc=1',
+               f'setpts=PTS/{speed:.4f}', f'fps={FPS}']
     if hold > 0:
-        vf.append(f'tpad=stop_mode=clone:stop_duration={hold:.3f}')
+        pad = 'stop' if hold_at == 'end' else 'start'
+        vf.append(f'tpad={pad}_mode=clone:{pad}_duration={hold:.3f}')
     vf.append(f'trim=duration={slot:.3f},setpts=PTS-STARTPTS')
+    zoom = c.get('push', 0.04)
+    if zoom:
+        frames = int(round(slot * FPS))
+        vf.append(f"zoompan=z='1+{zoom}*on/{frames}':x='iw/2-(iw/zoom/2)':y='ih/2-(ih/zoom/2)':d=1:s={W}x{H}:fps={FPS}")
     out = os.path.join(work, f'fit-{idx:02d}.mp4')
     run(['ffmpeg', '-v', 'error', '-y', '-i', src, '-an', '-vf', ','.join(vf), '-c:v', 'libx264', '-preset', 'medium',
-         '-crf', '18', '-pix_fmt', 'yuv420p', out])
+         '-crf', '18', '-pix_fmt', 'yuv420p', '-r', str(FPS), out])
     return out, speed, hold
 
 
@@ -81,7 +99,7 @@ def main():
         c = dict(c, file=p(c['file']))
         out, speed, hold = fit_clip(c, work, i)
         parts.append(out)
-        print(f"{os.path.basename(c['file'])}: slot {c['end'] - c['start']:.2f}s, speed {speed:.2f}, hold {hold:.2f}s")
+        print(f"{os.path.basename(c['file'])}: slot {c['end'] - c['start']:.2f}s, speed {speed:.2f}, extra {hold:.2f}s at {c.get('hold_at', 'start')}")
     listing = os.path.join(work, 'list.txt')
     open(listing, 'w').write(''.join(f"file '{x}'\n" for x in parts))
     video = os.path.join(work, 'video.mp4')
@@ -104,7 +122,7 @@ def main():
     n = labels.count('[')
     mix += f"{labels}amix=inputs={n}:duration=first:normalize=0,atrim=0:{total:.3f},loudnorm=I=-14:TP=-1.5:LRA=11[out]"
     run(['ffmpeg', '-v', 'error', '-y', *inputs, '-filter_complex', mix, '-map', '0:v', '-map', '[out]',
-         '-vf', sub, '-c:v', 'libx264', '-preset', 'medium', '-crf', '18', '-pix_fmt', 'yuv420p',
+         '-vf', sub, '-c:v', 'libx264', '-preset', 'medium', '-crf', '18', '-pix_fmt', 'yuv420p', '-r', str(FPS),
          '-c:a', 'aac', '-b:a', '192k', '-ar', '48000', '-t', f'{total:.3f}', p(plan['output'])])
     print('wrote', p(plan['output']))
 

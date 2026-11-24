@@ -1,32 +1,39 @@
-# Production hand-off to directing-stickman-videos (B2)
+# Production hand-off
 
-Rendering needs a Claude Code session with the **directing-stickman-videos** skill installed, Node 20+ and FFmpeg, plus the channel's voice, image and music services configured as environment secrets. In claude.ai, stop at the scene plan and tell the author to continue in Claude Code.
+The channel's production route (since 24 Nov 2026) is **silent Google Flow video clips, assembled to one continuous narration**. The author generates the clips in Flow by hand; Claude writes the prompts, records the narration, and assembles everything with `tools/assemble_clips.py`. The earlier B2 illustrated route (directing-stickman-videos) is archived in `episodes/001-god-behind-or-ahead/archive/b2-trial/` and is only a fallback.
 
 ## Channel defaults (do not re-ask once set)
 
 | Setting | Value |
 |---|---|
-| Mode / style | B · Autopilot, B2 Colorful Hand-Drawn |
-| Long video | 16:9, 8–12 min |
-| Shorts | 9:16, 30–55 s, separate native projects |
-| Language | English (dubbing added later in YouTube Studio) |
-| Narrator | the channel voice: provider, voice ID and settings recorded in `channel-settings.json` once chosen (not yet chosen on 22 Nov 2026) |
-| Music | one continuous licensed track per video, under the narration |
-| Captions | B2's own single-line semantic captions |
+| Long video | 16:9, 1920×1080, 24 fps (Flow's native rate; never convert to 30) |
+| Look | Rich illustrated 2D cartoon, expressive faces, detailed lit settings; characters drawn inside the scene |
+| Cast | Narrator (round ivory head, big expressive eyes; clothes may change) and the blonde girl; reference images uploaded by the author |
+| Narrator voice | ElevenLabs Jon, settings in `channel-settings.json` |
+| Music | One continuous licensed track per video (YouTube Audio Library); credit if marked CC |
+| Captions | Phrase-by-phrase, burned in, light label |
+| Loudness | About -14 LUFS |
 
-## Steps
-1. Follow directing-stickman-videos' own workflow for B2: run its `workflow --style B2 --ratio 16:9` command and read the references it names. Its quality gates and review steps apply in full; this file only supplies channel defaults.
-2. Keep each video in its own project folder named `<tracker #>-<short-slug>` (e.g. `056-time-is-counting`), outside the skill directory.
-3. Generate the narration once from the approved script with the channel voice. Never re-voice approved audio automatically.
-4. Scene plan → illustrations. Every scene's art is drawn for this story; reuse only the channel's recurring narrator character design and palette, never whole scenes.
-5. Make the 20-second preview with sound; the author approves it before the full render.
-6. Render the full film, then the Shorts as separate 9:16 projects.
-7. Deliver the MP4, SRT, thumbnail concepts and the publishing pack, and update the tracker status.
+## Steps for one episode
 
-## Scene plan format (from the approved script)
+1. **Narration first.** Record the approved script per scene with the channel voice, trim end clicks (`tools/clean_narration_tails.py`), and get word timings (ElevenLabs forced alignment).
+2. **Shot list from the word timings.** Cut the narration into slots at natural pauses. **Each slot must be at most the Flow clip length (default 8 s)**; split longer passages into two shots.
+3. **Flow prompts.** One prompt per shot (see the rules below), plus the reference images to attach.
+4. **Author generates** clips in Flow (8 s, 16:9, 720p) and uploads them to `episodes/<ep>/clips/upload/`. File names don't matter: Claude identifies each clip by its content and renames it.
+5. **Assemble** with `tools/assemble_clips.py` and a `plan.json` (slots, narration, captions, music, ambience). Check frames for glitches (extra limbs, text, costume swaps) and list clips to regenerate.
+6. **Deliver** the MP4, SRT, trimmed clips (for manual editing), thumbnail concepts and the publishing pack; update the tracker.
 
-| Scene | Narration (exact words) | What is drawn | What moves | Sound |
-|---|---|---|---|---|
-| 1 | "…" | … | … | … |
+## Rules for every Flow clip prompt
 
-One scene per idea, roughly 2–4 seconds of narration each; longer holds only for reading or a reaction.
+- **State the exact length** at the start: "8-second clip". The model then paces the action to fill it.
+- **Timed beats that fill the whole clip**, matched to the narration it covers: `[0–3 s] … [3–6 s] … [6–8 s] …`. The last beat contains real action or a deliberate settle (e.g. "he stops and looks back, smiling"), never nothing; idle endings become frozen frames.
+- **Action that matches the slot:** if the narration slot is shorter than the clip, put the key moment in the first part; the assembler trims the end.
+- Repeat the **style block** word for word in every prompt; name each character by a visual description that matches the attached reference.
+- **Silent:** no dialogue, no lip-sync, no music. **No text,** letters or numbers anywhere.
+- For shots where costumes or props must not swap, use **Frames to video**: first make a still of the opening moment with the reference images, then animate it.
+
+## How the assembler fits clips
+
+- Stays at 24 fps; slows a clip down to at most 70% speed with motion interpolation (smooth, no repeated frames).
+- Extra time goes at the **start** of the clip (before the action), never as a frozen last frame mid-action; a slow 4% camera push masks it. Per clip, `"hold_at": "end"` is allowed for closing shots.
+- Clips longer than their slot are trimmed at the end.
