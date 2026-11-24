@@ -47,12 +47,21 @@ Script format: numbered scenes. For each scene: the narration, then a one-line v
 ## 4. Publishing pack
 
 ```markdown
-- 3 title options (curiosity + clarity, under 60 characters)
+- 3 title options (curiosity + clarity, under 60 characters); at least one uses
+  the channel's series formula (see below)
 - 2 thumbnail concepts for YouTube's Test & Compare (one character, one object)
 - Description: 2-line hook, chapters, sources, affiliate links, disclosure line
 - Tags + 5 keywords
 - Pinned comment with the question to viewers
 ```
+
+### Series formula, thumbnails and faces
+
+Learned from successful explainer channels (e.g. Neon Rush's fixed "How Did Humans ___?" series): one recognisable title formula, bold short thumbnail questions and very expressive characters. Borrow the principles, never their look.
+
+- **Title formula** (candidates until the author picks one): "___, Measured Against What?" · "Is ___ Really ___?" · "How Do We Know ___?". Use it on most long videos so they read as one series.
+- **Thumbnail:** one huge question of 1–3 words ("10 METRES?", "GOD?"), one strong emotion on a character's face, one clear object, our own palette and font. Never a lookalike of another channel's thumbnails.
+- **Expressive faces:** every character shot states the emotion in the image prompt (surprise, doubt, delight, worry, awe): eyebrows, eye size and mouth shape carry it. Calm dot-eyed faces only where calm is the point.
 
 ## 5. 7-day review
 
